@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <h1>my library</h1>
+    </div>
+    <div class="main">
+        <div class="book-grid"></div>
+        <button id="addBook" onclick="showForm()"><i class="bi bi-plus"></i></button>
+    </div>
+
+    <div class="form">
+        <h3>Add New Book</h3>
+        <input placeholder="Title" type="text" id="title"><br>
+        <h6 class="error" id="titleError">*Title is required</h6>
+        <input placeholder="Author" type="text" id="author"><br>
+        <h6 class="error" id="authorError">*Author is required</h6>
+        <input placeholder="Pages" type="number" id="numPages"><br>
+        <h6 class="error" id="pagesError">*Number of pages is required</h6>
+        <div id="readStatus-flex">
+            <label for="readStatus">Have you read it?</label><input type="checkbox" id="readStatus">
+        </div>
+        <button id="addButton" class="formBtn" onclick="addBookToLibrary()">Add</button>
+        <button id="cancelButton" class="formBtn" onclick="cancel()">Cancel</button>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
