@@ -141,6 +141,11 @@ body {
     flex: 1;
 }
 
+.statusButton:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .formBtn {
     border-radius: 20px;
     padding: 10px;
@@ -151,8 +156,8 @@ body {
 }
 
 #deleteBtn:hover {
+    cursor: pointer;
     color: white;
-    background-color: var(--red);
 }
 
 #cancelButton {
@@ -177,14 +182,6 @@ body {
     outline: 2px solid var(--red);
     cursor: pointer;
 }
-
-/* .formContainer {
-    background-color: rgba(20, 20, 20, 0.5);
-    height: 100vh;
-    display: none;
-    z-index: 10;
-    position: fixed;
-} */
 
 input {
     height: 2rem;
