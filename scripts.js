@@ -24,6 +24,10 @@ function showForm(){
 }
 
 function addBookToLibrary(){
+    titleError.style.visibility = "hidden";
+    authorError.style.visibility = "hidden";
+    pagesError.style.visibility = "hidden";
+    
     if(titleInput.value && authorInput.value && pagesInput.value){
         myLibrary.push(new Book(titleInput.value, authorInput.value, pagesInput.value, readInput.checked));
         display(myLibrary[myLibrary.length - 1]);
